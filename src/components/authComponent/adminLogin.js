@@ -16,7 +16,7 @@ const LoginForm = ({handleClose}) => {
     setIsLoading(true); // Set loading state to true when request starts
 
     try {
-        const response = await axios.post('/admin/login', {
+        const response = await axios.post('https://fritz-lotion-backend.onrender.com/admin/login', {
             email,
             password,
         });

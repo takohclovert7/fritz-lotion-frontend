@@ -19,7 +19,7 @@ const LoginScreen = () => {
         setIsLoading(true); // Set loading state to true when request starts
 
         try {
-            const response = await axios.post('/users/login', {
+            const response = await axios.post('https://fritz-lotion-backend.onrender.com/users/login', {
                 email,
                 password,
             });

@@ -12,7 +12,7 @@ export default function AdminSeeAllOrders() {
     const fetchData = async (userData) => {
         setLoading(true); // Set loading to true when fetching starts
         try {
-            const response = await axios.get('/admin/see/all/orders', {
+            const response = await axios.get('https://fritz-lotion-backend.onrender.com/admin/see/all/orders', {
                 headers: {
                     Authorization: userData, // Assuming Bearer token is used
                 },

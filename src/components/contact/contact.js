@@ -43,7 +43,7 @@ const ContactUs = () => {
 
     console.log(formData)
     try {
-      const response = await axios.post('/send-email', formData);
+      const response = await axios.post('https://fritz-lotion-backend.onrender.com/send-email', formData);
 
       if (response.data) {
         setFormData({ name: '', email: '', message: '' });

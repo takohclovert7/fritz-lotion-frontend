@@ -26,7 +26,7 @@ const PaymentMethodSelector = () => {
     const userData = getDataWithExpiration('FritzUserData');
     if (userData) {
       try {
-        const response = await axios.post('/users/place/order', {
+        const response = await axios.post('https://fritz-lotion-backend.onrender.com/users/place/order', {
           productImage: product.itemImage,
           productName: product.itemName,
           productDescription: product.itemDescription,

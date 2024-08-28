@@ -22,7 +22,7 @@ const Invoice = () => {
             setErrorMessage("")
             setProductObtain("")
             try {
-                const response = await axios.post('/users/get/invoice/data', {
+                const response = await axios.post('https://fritz-lotion-backend.onrender.com/users/get/invoice/data', {
                     email:userData.email
                    
                 });

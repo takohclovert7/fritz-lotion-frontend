@@ -23,7 +23,7 @@ const SignupScreen = () => {
         setError('');
         try {
             setIsSigningUp(true); // Set the signup state to true while signing up
-            const response = await axios.post('/users/signup', {
+            const response = await axios.post('https://fritz-lotion-backend.onrender.com/users/signup', {
                 name, // Include name in the request body
                 email,
                 password,

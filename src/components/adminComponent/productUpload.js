@@ -42,7 +42,7 @@ const ProductUpload = () => {
     const userData = getDataWithExpiration('LotionAdmin');
     if (userData) {
       try {
-        const response = await axios.post('/admin/dashboard', formData, {
+        const response = await axios.post('https://fritz-lotion-backend.onrender.com/admin/dashboard', formData, {
           headers: {
             Authorization: userData,
           },

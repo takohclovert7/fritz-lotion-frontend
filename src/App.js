@@ -33,7 +33,7 @@ const App = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('/get/all/products')
+        axios.get('https://fritz-lotion-backend.onrender.com/get/all/products')
           .then(response => {
             setData(response.data.items);
             setLoading(false);
