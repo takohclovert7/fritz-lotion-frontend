@@ -1,0 +1,29 @@
+/* MyTabView.css */
+
+.react-tabs__tab-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: "100%";
+    overflow: hidden;
+  }
+  
+  .react-tabs__tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold; /* Ensure the text is bold by default */
+    color: gray; /* Inactive tab text color */
+    border: none; /* Remove default border */
+    outline: none; /* Remove focus outline */
+  }
+  
+  .react-tabs__tab--selected {
+    color: black; /* Active tab text color */
+    background-color: #ccc; /* Highlight the selected tab */
+    border-bottom: 2px solid black; /* Optional: Add a bottom border to indicate selection */
+  }
+  

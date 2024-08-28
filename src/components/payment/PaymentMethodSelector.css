@@ -1,0 +1,15 @@
+.custom-flutterwave-button {
+    background-color: #4caf50; /* Match with your selected button style */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .custom-flutterwave-button:hover {
+    background-color: #45a049; /* Slightly darker shade for hover effect */
+  }
+  

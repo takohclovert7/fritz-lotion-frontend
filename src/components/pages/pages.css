@@ -1,0 +1,38 @@
+.search-box {
+    width: 480px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+   margin: auto;
+   overflow: hidden;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+
+  }
+  ::placeholder {
+    font-size: 15px;
+  }
+  .search-box span {
+    width: 20%;
+    opacity: 0.5;
+    border-left: 2px solid #0f3460; 
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+   
+  }
+
+  .search-box span:hover, .search-box span:active{
+    background-color: gray;
+  }
+
+    /* Tablet View */
+    @media (max-width: 800px) and (min-width: 600px) {
+     
+
+    }

@@ -1,0 +1,57 @@
+.table-container {
+    overflow-x: auto;
+  }
+  
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Minimum width to ensure table does not get too small */
+  }
+  
+  .responsive-table th,
+  .responsive-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .cover-image {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-table th,
+    .responsive-table td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .responsive-table thead {
+      display: none;
+    }
+  
+    .responsive-table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .responsive-table td {
+      text-align: right;
+      position: relative;
+      padding-left: 50%;
+    }
+  
+    .responsive-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 10px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+  

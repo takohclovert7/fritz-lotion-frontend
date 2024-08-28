@@ -1,0 +1,36 @@
+.custom-navbar {
+    background-color: #0f3460 !important;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: #ffffff; /* Text color */
+}
+
+.custom-navbar .nav-link:hover {
+    color: #da0000; /* Hover color */
+}
+
+.custom-navbar .nav-link.active {
+    color: orange; /* Active link color */
+    font-weight: bold; /* Optional: make active link bold */
+}
+
+.custom-toggle {
+    background-color: transparent; /* Remove default background */
+    border: none; /* Remove default border */
+}
+
+.custom-toggle:hover {
+    background-color: transparent; /* Keep background transparent on hover */
+    
+}
+
+.custom-toggle .MuiSvgIcon-root {
+    font-size: 40px; /* Adjust icon size if needed */
+}
+
+.custom-toggle.expanded {
+    border: 2px solid orange; /* Border color when expanded */
+ 
+}

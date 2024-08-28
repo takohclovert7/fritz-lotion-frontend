@@ -1,0 +1,161 @@
+/* Set up the full-screen container */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Style for the left side (image and welcome message) */
+  .left-image {
+    background: linear-gradient(135deg, #0f3460, #1e3a8a, #4a90e2);
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+   
+  }
+  
+  .left-image .welcome-message {
+    max-width: 300px;
+    text-align: center;
+   
+  }
+  
+  /* Style for the right side (form) */
+  .login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+
+  }
+  
+  .form-container {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .form-container .h3{
+    margin: 40px;
+    font-weight: bolder;
+    font-size: 22px;
+   
+  }
+  .form-container .signup-link a{
+    font-weight: bolder;
+    color: black;
+  }
+  .form-container .signup-link a:hover, .form-container .signup-link a:active{
+   
+    color: blue;
+  }
+  .form-container .forgot-password  a{
+    font-weight: bolder;
+    color: black;
+  }
+  .form-container .forgot-password  a:hover, .form-container .forgot-password  a:active{
+   
+    color: blue;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bolder;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .form-group .focusInput{
+   background-color: aliceblue;
+  }
+  
+  .form-group .inputNotFocus{
+    background-color :white;
+   }
+   .login-button:hover,.login-button:active{
+    background-color: lightgray;
+   }
+  .login-button, .google-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .login-button {
+    background-color: #333;
+    color: white;
+  }
+  
+  .google-button {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .forgot-password {
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 650px) {
+    .left-image {
+     width: 30%;
+    }
+  
+    .login-form {
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 651px) and (max-width: 992px) {
+    .left-image {
+      width: 40%;
+    }
+  
+    .login-form {
+      width: 60%;
+    }
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
